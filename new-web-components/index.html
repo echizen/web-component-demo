@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>slider</title>
+  <link rel="import" href="./slider-component.html">
+</head>
+<body>
+  <script type="text/javascript">
+
+    var sliderDom = document.querySelector('link[rel="import"]').import
+    // // Grab our template full of slider markup and styles
+    var tmpl = sliderDom.querySelector('template');
+
+    // Create a prototype for a new element that extends HTMLElement
+    var ImgSliderProto = Object.create(HTMLElement.prototype);
+
+    // Setup our Shadow DOM and clone the template
+    ImgSliderProto.createdCallback = function() {
+      var root = this.createShadowRoot();
+      root.appendChild(document.importNode(tmpl.content, true));
+    };
+
+    // Register our new element
+    var ImgSlider = document.registerElement('img-slider', {
+      prototype: ImgSliderProto
+    });
+  </script>
+
+    <img-slider>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/rock.jpg" alt="an interesting rock">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/grooves.jpg" alt="some neat grooves">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/arch.jpg" alt="a rock arch">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/sunset.jpg" alt="a dramatic sunset">
+    </img-slider>
+</body>
+</html>
+
