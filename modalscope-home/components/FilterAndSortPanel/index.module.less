@@ -1,0 +1,162 @@
+@border-radius-base: 2px;
+@color-1: #f4f7fb;
+@color-2: #624afb;
+@color-3: #6149fa;
+@color-4: #8082a0;
+@color-5: #3b29b0;
+@color-6: #ca632f;
+@color-7: #27254a;
+@color-8: #fdfdfd;
+@font-size-base: 14px;
+@font-size-sm: 12px;
+@margin-xs: 8px;
+
+.wrapper {
+  margin-top: 10px;
+  padding: 2px 20px 20px;
+  background-color: @color-8;
+}
+
+.containerSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.optionsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.allButton {
+  min-width: 64px;
+  height: 32px;
+  border-width: 1px;
+  border-color: @color-2;
+  background-color: @color-1;
+  color: @color-3;
+}
+
+.programmaticCreation {
+  margin-left: 20px;
+  white-space: nowrap;
+  color: @color-4;
+  font-size: @font-size-base;
+}
+
+.interactiveCreation {
+  margin-left: 40px;
+  white-space: nowrap;
+  color: @color-4;
+  font-size: @font-size-base;
+}
+
+.searchInput {
+  width: 378px;
+}
+
+.iconZoomOut {
+  color: @color-3;
+  font-size: @font-size-sm;
+}
+
+.tagSection {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  gap: 34px;
+}
+
+.fieldLabel {
+  white-space: nowrap;
+  color: @color-4;
+  font-size: @font-size-base;
+}
+
+.multiModalTag {
+  margin-left: 10px;
+  color: @color-5;
+  font-size: @font-size-base;
+}
+
+.naturalLanguageProcessingButton {
+  max-width: 104px;
+  height: 24px;
+  margin-left: @margin-xs;
+  border-radius: 7px;
+  background-color: @color-1;
+  color: @color-5;
+}
+
+.autoMLTag {
+  margin-left: @margin-xs;
+  color: @color-5;
+  font-size: @font-size-base;
+}
+
+.careerTag {
+  margin-left: 14px;
+  color: @color-6;
+  font-size: @font-size-base;
+}
+
+.educationTag {
+  margin-left: 10px;
+  color: @color-6;
+  font-size: @font-size-base;
+}
+
+.marketingTag {
+  margin-left: @margin-xs;
+  color: @color-6;
+  font-size: @font-size-base;
+}
+
+.iconDropdown {
+  color: @color-6;
+  font-size: 6px;
+}
+
+.gpuDeployButton {
+  height: 28px;
+  background-color: @color-1;
+}
+
+.buttonContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gpuImage {
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: @border-radius-base;
+}
+
+.buttonText {
+  margin-left: 2px;
+  font-size: @font-size-base;
+}
+
+.gpuLabel {
+  color: @color-3;
+}
+
+.deploymentSpace {
+  color: @color-7;
+}
+
+.spaceImage {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  margin-left: @margin-xs;
+  border-radius: @border-radius-base;
+}

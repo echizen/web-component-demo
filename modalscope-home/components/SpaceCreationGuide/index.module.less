@@ -1,0 +1,141 @@
+@border-radius-base: 2px;
+@color-1: #27254a;
+@color-2: #8082a0;
+@color-3: #b0a5f6;
+@color-4: #aea3f7;
+@color-5: #f3f5f9;
+@color-6: #6149fa;
+@color-7: #f4f7fb;
+@color-8: #fdfdfd;
+@font-size-base: 14px;
+@margin-md: 16px;
+@padding-md: 16px;
+@padding-xs: 8px;
+
+.wrapper {
+  margin-top: @margin-md;
+  padding: @padding-xs @padding-xs 14px 14px;
+  background-color: @color-8;
+}
+
+.spaceContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerSection {
+  display: flex;
+  align-items: center;
+}
+
+.headerImage {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-left: 2px;
+  border-radius: @border-radius-base;
+}
+
+.headerTitle {
+  flex: 1;
+  margin-left: 10px;
+  white-space: nowrap;
+  color: @color-1;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contentWrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: @padding-md 28px @padding-md 32px;
+  border-radius: 10px;
+  background-color: @color-7;
+}
+
+.stepOneImage {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+}
+
+.stepOneDetails {
+  display: flex;
+  flex-direction: column;
+  margin-left: @margin-md;
+}
+
+.stepOneTitle {
+  align-self: flex-start;
+  white-space: nowrap;
+  color: @color-1;
+  font-size: @font-size-base;
+  font-weight: bold;
+}
+
+.stepOneDescription {
+  margin-top: 2px;
+  white-space: nowrap;
+  color: @color-2;
+  font-size: @font-size-base;
+}
+
+.minusIcon {
+  margin-left: 18px;
+  color: @color-3;
+  font-size: 10px;
+}
+
+.stepTwoImage {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  margin-left: 46px;
+  border-radius: 3px;
+}
+
+.stepTwoDetails {
+  display: flex;
+  flex-direction: column;
+  margin-left: 18px;
+}
+
+.stepThreeImage {
+  flex-shrink: 0;
+  width: 22px;
+  height: 10px;
+  margin-left: 6px;
+  border-radius: 3px;
+}
+
+.stepFourImage {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  margin-left: 36px;
+  border-radius: 3px;
+}
+
+.arrowIndicator {
+  margin-left: 78px;
+  white-space: nowrap;
+  color: @color-4;
+  font-size: @font-size-base;
+}
+
+.stepFourImage2 {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  margin-left: 36px;
+  border-radius: 3px;
+}
+
+.createButton {
+  height: 32px;
+  margin-left: @margin-md;
+  background-color: @color-5;
+  color: @color-6;
+}
