@@ -1,0 +1,362 @@
+@border-radius-base: 2px;
+@color-1: #27254a;
+@color-2: #8082a0;
+@color-3: #e8e9ed;
+@color-4: #f4f7fb;
+@color-5: #7e6fda;
+@color-6: #454c5a;
+@color-7: #f3f5f9;
+@color-8: #fdfdfd;
+@font-size-base: 14px;
+@margin-md: 16px;
+@margin-sm: 12px;
+@margin-xs: 8px;
+@padding-md: 16px;
+@padding-sm: 12px;
+
+.wrapper {
+  flex: 1;
+  margin-top: 10px;
+  padding: 2px @padding-sm @padding-md 20px;
+  background-color: @color-8;
+}
+
+.productContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.productHeader {
+  display: flex;
+  align-items: center;
+}
+
+.featuredLabel {
+  color: @color-1;
+  font-size: @font-size-base;
+}
+
+.thumbnailImage {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+  border-radius: 3px;
+}
+
+.productBody {
+  display: flex;
+  flex: 1;
+  margin-top: @margin-sm;
+}
+
+.productRow {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px;
+  row-gap: 24px;
+}
+
+.productColumn {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 50%;
+  max-width: 50%;
+  padding-right: @padding-sm;
+  padding-left: @padding-sm;
+}
+
+.productItem {
+  display: flex;
+  flex-direction: column;
+  padding: 18px @padding-md;
+  border-radius: 16px;
+  background-color: @color-4;
+}
+
+.modelBattleImage {
+  flex-shrink: 0;
+  width: 374px;
+  height: 208px;
+  border-radius: 10px;
+}
+
+.productName {
+  margin-top: @margin-md;
+  margin-right: 5px;
+  margin-left: 5px;
+  white-space: nowrap;
+  color: @color-1;
+  font-size: @font-size-base;
+  font-weight: bold;
+}
+
+.productDetails {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.productStats {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.statsIcon {
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 4px;
+}
+
+.statsTitle {
+  flex: 1;
+  margin-left: 6px;
+  white-space: nowrap;
+  color: @color-2;
+  font-size: @font-size-base;
+}
+
+.updateInfo {
+  display: flex;
+  margin-right: 2px;
+}
+
+.updateDate {
+  align-self: center;
+  white-space: nowrap;
+  color: @color-2;
+  font-size: @font-size-base;
+}
+
+.viewsWrapper {
+  width: 2px;
+  min-height: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 6px;
+  background-color: @color-3;
+}
+
+.viewCount {
+  align-self: center;
+  margin-left: 10px;
+  white-space: nowrap;
+  color: @color-2;
+  font-size: @font-size-base;
+}
+
+.likesWrapper {
+  width: 1px;
+  min-height: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  background-color: @color-3;
+}
+
+.likeIcon {
+  flex-shrink: 0;
+  align-self: center;
+  width: 10px;
+  height: 10px;
+  margin-left: @margin-sm;
+  border-radius: @border-radius-base;
+}
+
+.likeCount {
+  align-self: center;
+  margin-left: 6px;
+  white-space: nowrap;
+  color: @color-2;
+  font-size: @font-size-base;
+}
+
+.commentItem {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 18px 18px;
+  border-radius: 15px;
+  background-color: @color-4;
+}
+
+.commentThumbnail {
+  flex-shrink: 0;
+  width: 370px;
+  height: 206px;
+  border-radius: 9px;
+}
+
+.commentTitle {
+  align-self: flex-start;
+  margin-top: 15px;
+  white-space: nowrap;
+  color: @color-1;
+  font-size: @font-size-base;
+  font-weight: bold;
+}
+
+.commentDetails {
+  display: flex;
+  margin-top: 42px;
+}
+
+.commentIcon {
+  flex-shrink: 0;
+  align-self: center;
+  width: 15px;
+  height: 15px;
+  margin-left: 2px;
+  border-radius: 6px;
+}
+
+.commentUpdate {
+  align-self: center;
+  margin-left: 72px;
+  white-space: nowrap;
+  color: @color-2;
+  font-size: @font-size-base;
+}
+
+.commentViews {
+  width: 1px;
+  min-height: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 6px;
+  background-color: @color-3;
+}
+
+.commentViewCount {
+  align-self: center;
+  margin-left: @margin-sm;
+  white-space: nowrap;
+  color: @color-2;
+  font-size: @font-size-base;
+}
+
+.commentLikes {
+  width: 2px;
+  min-height: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  background-color: @color-3;
+}
+
+.commentLikeIcon {
+  flex-shrink: 0;
+  align-self: center;
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  border-radius: @border-radius-base;
+}
+
+.commentReplies {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 25px;
+  padding: 18px;
+  border-radius: 18px;
+  background-color: @color-7;
+}
+
+.storySection {
+  display: flex;
+  margin-top: @margin-md;
+}
+
+.storyItem {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.storyTitle {
+  align-self: flex-start;
+  white-space: nowrap;
+  color: @color-1;
+  font-size: @font-size-base;
+  font-weight: bold;
+}
+
+.tagSection {
+  display: flex;
+  align-items: center;
+  margin-top: @margin-xs;
+  gap: 6px;
+}
+
+.visionTag {
+  border-color: @color-5;
+  color: @color-5;
+  font-size: @font-size-base;
+}
+
+.anyStoryTag {
+  color: @color-6;
+  font-size: @font-size-base;
+}
+
+.additionalInfo {
+  display: flex;
+  align-items: center;
+  margin-top: @margin-sm;
+}
+
+.labImage {
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 7px;
+}
+
+.labName {
+  margin-left: 6px;
+  white-space: nowrap;
+  color: @color-2;
+  font-size: @font-size-base;
+}
+
+.dateUpdated {
+  margin-left: 80px;
+  white-space: nowrap;
+  color: @color-2;
+  font-size: @font-size-base;
+}
+
+.extraContent {
+  width: 2px;
+  min-height: 12px;
+  margin-top: 66px;
+  margin-left: 6px;
+  background-color: @color-3;
+}
+
+.viewCount2 {
+  margin-top: 64px;
+  margin-left: @margin-sm;
+  white-space: nowrap;
+  color: @color-2;
+  font-size: @font-size-base;
+}
+
+.separatorDiv {
+  width: 2px;
+  min-height: 12px;
+  margin-top: 68px;
+  margin-left: @margin-xs;
+  background-color: @color-3;
+}
+
+.commentCount {
+  margin-top: 64px;
+  margin-left: @margin-sm;
+  color: @color-2;
+  font-size: @font-size-base;
+}
